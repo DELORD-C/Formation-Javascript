@@ -80,7 +80,7 @@ let voitures = ['mercedes', 'ferrari', 'renault', 'peugeot', 'toyota'];
 
 
 // function direBonjour(prenom, nom, age = 20) {
-//     console.log('Bonjour ' + prenom + ' ' + nom + ' ' + age + ' ans.');  
+    console.log('Bonjour ' + prenom + ' ' + nom + ' ' + age + ' ans.');  
 // }
 
 // function direAuRevoir() {
