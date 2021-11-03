@@ -18,30 +18,28 @@ window.addEventListener('mousedown', function (event) { //fonction anonyme
     }
 });
 
-let num = 20;
+// let num = 20;
 
-num += 10;
-num = num + 10; //meme chose
+// num += 10;
+// num = num + 10; //meme chose
 
-// modulo
-let modulo = 100 % 97; // = 3 (le reste de la division de 100 par 97);
+// // modulo
+// let modulo = 100 % 97; // = 3 (le reste de la division de 100 par 97);
 
-if (modulo == 3) {
-    console.log('trois');
-}
-else if (modulo == 5) {
-    console.log('cinq')
-}
-else {
-    console.log('autre');
-}
 
-modulo == 3 ? console.log('trois') : console.log('autre'); // Opérateur ternaire sert à simplifier une condition (TEST ? VALEUR SI VRAI : VALEUR SI FAUX)
+// if (modulo == 3) {
+//     console.log('trois');
+// }
+// else if (modulo == 5) {
+//     console.log('cinq')
+// }
+// else if (modulo == 6) {
+//     console.log('six')
+// }
+// else if (modulo == 7) {
+//     console.log('sept')
+// }
+// else {
+//     console.log('autre');
+// }
 
-function direBonjour () { //Fonction nommée
-    console.log('Bonjour');
-}
-
-let bonjour = function () { //fonction anonyme
-    console.log('Bonjour');
-}

@@ -13,8 +13,7 @@ modele1 = modele1 - 1; // Il ne faut plus préciser let, var, ou const lorsque l
 
 // CONDITIONS
 // Opérateurs :    ==   ===   !=   !==   <   >   <=   >=
-let A = 1;
-let B = '1';
+let A = 1, B = '1';
 
 if (A == B) //VRAI
 if (A === B) //FAUX
