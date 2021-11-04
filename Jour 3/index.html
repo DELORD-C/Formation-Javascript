@@ -8,7 +8,7 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <input type="text" placeholder='Recherche' id='search'>
+    <input type="text" placeholder='Recherche' id='search' required>
     <ul>
         <li>Mercedes</li>
         <li>Peugeot</li>
@@ -21,7 +21,18 @@
         <img src="images/1.png" alt='vert'>
         <img src="images/2.png" alt='profil'>
         <img src="images/3.png" alt='info'>
+        <img src="images/1.png" alt='vert'>
+        <img src="images/2.png" alt='profil'>
+        <img src="images/3.png" alt='info'>
     </div>
+    <form action="" id='formulaire'>
+        <input type="text" placeholder='Nom' name='Nom' id='Nom' required>
+        <input type="text" placeholder='Prénom' name='Prenom' id='Prenom' required>
+        <input type="email" placeholder='Email' name='Email' id='Email' required>
+        <input type="password" placeholder='Mdp' name='Mdp' id='Mdp' required>
+        <input type="submit" value='Envoyer'>
+    </form>
+    <script src="verif.js"></script>
     <script src="filtre.js"></script>
     <script src="tableaux.js"></script>
 </body>
