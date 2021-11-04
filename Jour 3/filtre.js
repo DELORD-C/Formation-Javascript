@@ -1,29 +1,50 @@
 let search = document.getElementById('search');
 
-search.addEventListener('keydown', function(event) {
-    if (event.key === 'Enter') {
-        let keyword = search.value;
-        let elementsListe = document.getElementsByTagName('li');
-        if (keyword == '') {
-            for (let element of elementsListe) {
-                element.style.display = 'block';
-            }
-        }
-        else {
-            for (let element of elementsListe) {
-                if (element.innerHTML === keyword) {
-                    element.style.display = 'block';
+
+// Version liste
+// search.addEventListener('keydown', function(event) {
+//     if (event.key === 'Enter') {
+//         let keyword = search.value;
+//         let elementsListe = document.getElementsByTagName('li');
+//         if (keyword == '') {
+//             for (let element of elementsListe) {
+//                 element.style.display = 'block';
+//             }
+//         }
+//         else {
+//             for (let element of elementsListe) {
+//                 if (element.innerHTML === keyword) {
+//                     element.style.display = 'block';
+//                 }
+//                 else {
+//                     element.style.display = 'none';
+//                 }
+//             }         
+//         }
+//     }
+// });
+
+
+// Version Image
+search.addEventListener('keydown', function(event) { //Event listener : On appelle cette fonction à chaque
+                                                     //fois qu'une touche est pressée dans le champs input 'search'
+    if (event.key === 'Enter') { //Ici on verifie que la touche appuyée 
+        let keyword = search.value; //On récupère la valeur du champs search
+        let imagesListe = document.getElementsByTagName('img'); //On récupère la liste des images
+        if (keyword == '') { //On vérifie que le champs search n'est pas vide
+            for (let image of imagesListe) { //Créer notre boucle sur chaque image (pour chaque image = for each img)
+                image.style.display = 'block'; //On affiche l'image
+            } //On affiche toutes les images
+        } // Fin de notre condition
+        else { // Si le champs search n'est pas vide
+            for (let image of imagesListe) { //Créer notre boucle pour chaque image
+                if (image.getAttribute("alt") === keyword) { // Si attribut alt de l'image et la valeur du champs search sont les mêmes
+                    image.style.display = 'block'; //Alors on affiche l'image
                 }
-                else {
-                    element.style.display = 'none';
+                else { // Sinon
+                    image.style.display = 'none'; // On cache l'image
                 }
             }         
         }
     }
 });
-
-// let imagesListe = document.getElementsByTagName('img');
-// for (let image of imagesListe) {
-//     let altImage = image.getAttribute("alt");
-//     console.log(altImage);
-// }
