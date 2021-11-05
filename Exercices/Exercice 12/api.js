@@ -1,7 +1,7 @@
-let champ = document.getElementById('text'),
+let champ = document.getElementById('btn'),
     liste = ?;
 
-champ.addEventListener('keydown', function (event) {
+function apiCall () {
     if (event.key === 'Enter') {
         let requete = new XMLHttpRequest();
         requete.onreadystatechange = function () {
@@ -18,4 +18,4 @@ champ.addEventListener('keydown', function (event) {
         requete.open('GET', '?' + champ.value);
         requete.send();
     }
-});
+}
