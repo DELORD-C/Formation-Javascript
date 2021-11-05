@@ -41,7 +41,7 @@ search.addEventListener('keydown', function(event) { //Event listener : On appel
                 if (image.getAttribute("alt") === keyword) { // Si attribut alt de l'image et la valeur du champs search sont les mêmes
                     image.style.display = 'block'; //Alors on affiche l'image
                 }
-                else { // Sinon
+                else {// Sinon
                     image.style.display = 'none'; // On cache l'image
                 }
             }         
