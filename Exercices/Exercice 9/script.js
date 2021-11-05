@@ -11,35 +11,3 @@ rouge.addEventListener('mouseenter', function() {
 rouge.addEventListener('mouseleave', function() {
     rouge.style.opacity = 1;
 });
-
-bleue.addEventListener('mouseenter', function() {
-    bleue.style.width = '0px';
-});
-
-bleue.addEventListener('mouseleave', function() {
-    bleue.style.width = '50px';
-});
-
-verte.addEventListener('mouseenter', function() {
-    verte.style.marginLeft = '150px';
-});
-
-verte.addEventListener('mouseleave', function() {
-    verte.style.marginLeft = '5px';
-});
-
-violette.addEventListener('mouseenter', function() {
-    violette.style.transform = 'rotate(90deg)';
-});
-
-violette.addEventListener('mouseleave', function() {
-    violette.style.transform = 'rotate(0deg)';
-});
-
-orange.addEventListener('mouseenter', function() {
-    orange.style.filter = 'grayscale(1)';
-});
-
-orange.addEventListener('mouseleave', function() {
-    orange.style.filter = 'grayscale(0)';
-});

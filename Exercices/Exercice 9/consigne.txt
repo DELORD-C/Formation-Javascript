@@ -1,0 +1,4 @@
+Dans script.js :
+
+    Créer les animation pour correspondre aux commentaires renseignéés
+    dans index.html (ex : rouge)

@@ -2,6 +2,7 @@ let nom = document.getElementById('Nom'),
     prenom = document.getElementById('Prenom'),
     email = document.getElementById('Email'),
     mdp = document.getElementById('Mdp'),
+    tel = document.getElementById('Tel'),
     formulaire = document.getElementById('formulaire');
 
 function verifForm (event) {
@@ -20,6 +21,13 @@ function verifForm (event) {
     }
     else {
         mdp.style.border = '1px solid black';
+    }
+    if (!/(0|\\+33|0033)[1-9][0-9]{8}/.test(tel.value)) {
+        tel.style.border = '2px solid red';
+        erreurs++;
+    }
+    else {
+        tel.style.border = '1px solid black';
     }
     if (erreurs === 0) {
         formulaire.submit();

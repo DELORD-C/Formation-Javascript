@@ -1,6 +1,6 @@
 let voitures = ['mercedes', 'ferrari', 'renault', 'peugeot', 'toyota'];
-console.log(voitures[3]);
-console.log(voitures.length);
+// console.log(voitures[3]);
+// console.log(voitures.length);
 
 voitures.forEach(voiture => {
     console.log(voiture);
@@ -11,6 +11,6 @@ voitures.forEach(voiture => {
 // renault
 // ...
 
-for (let index = 0; index < ?; index++) {
-    console.log(?);
+for (let index = 0; index < voitures.length; index++) {
+    console.log(voitures[index]);
 }

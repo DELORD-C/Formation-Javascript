@@ -1,4 +1,4 @@
-let liste = document.getElementById('?');
+let liste = document.getElementById('liste');
 
 function apiCall () {
     let requete = new XMLHttpRequest();
@@ -7,12 +7,12 @@ function apiCall () {
             let resultats = JSON.parse(requete.responseText);
             console.log(resultats);
             resultats.forEach(resultat => {
-                let newElem = document.createElement('?');
+                let newElem = document.createElement('p');
                 newElem.innerHTML = resultat;
                 liste.append(newElem);
             });
         }
     }
-    requete.open('GET', '?');
+    requete.open('GET', 'http://api.publicapis.org/categories');
     requete.send();
 }
